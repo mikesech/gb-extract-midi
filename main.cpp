@@ -115,7 +115,7 @@ int loadHeader(std::istream& stream) {
 
 int main(int argc, char* argv[]) try {
 	if(argc != 2) {
-		std::cerr << "invalid invocation\n";
+		std::cerr << "Invalid invocation.\nUsage: " << argv[0] << " <input AIFF> > <output MIDI>\n";
 		return 1;
 	}
 	const std::string path = argv[1];
